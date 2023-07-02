@@ -18,6 +18,8 @@ export default function EmojiSticker({ imageSize, stickerSource }) {
         onActive: () => {
             if (scaleImage.value !== imageSize * 2) {
                 scaleImage.value = scaleImage.value * 2;
+            } else {
+                scaleImage.value = imageSize
             }
         }
     })
